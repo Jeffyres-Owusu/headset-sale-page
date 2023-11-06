@@ -14,6 +14,7 @@
       body {
         width: 100vw;
         height: 100vh;
+        background-color: #fdfbfbef;
 
         display: flex;
         align-items: center;
@@ -24,7 +25,7 @@
         border: none;
         border-radius: 3px;
         width: auto;
-        height: 390px;
+        height: 360px;
         padding: 30px;
         background-color: #fff;
         box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
@@ -40,17 +41,22 @@
       .btn-fship {
         color: #fff;
         background-color: #000;
+        border: none;
         border-radius: 30px;
-        padding: 3px;
+        padding: 6px;
         font-family: sans-serif;
-        font-size: 14px;
+        font-size: 10px;
         margin-bottom: 5px;
       }
 
       .head-p {
         font-family: sans-serif;
         margin-bottom: 30px;
-        font-size: 21px;
+        font-size: 15px;
+      }
+      .dormant {
+        font-size: 13px;
+        text-decoration: line-through;
       }
       .active-price {
         font-family: sans-serif;
@@ -59,17 +65,19 @@
         margin-top: 10px;
       }
       .duration {
-        font-size: 14px;
-        color: #766464;
+        font-size: 10px;
+        color: #cecccc;
+        margin: 5px 0;
       }
 
       .btn-add {
-        width: 305px;
+        width: 240px;
         margin: 10px 0;
         padding: 10px;
+        font-size: 12px;
         border: none;
         border-radius: 3px;
-        background-color: blue;
+        background-color: rgba(23, 23, 214, 0.918);
         color: #fff;
       }
 
@@ -88,6 +96,11 @@
         align-items: center;
       }
 
+      .stock {
+        font-size: 14px;
+        margin: 6px 0;
+      }
+
       .diagram {
         width: 24px;
         height: 24px;
@@ -97,18 +110,19 @@
       .diagram-add {
         display: flex;
 
-        border: 1px solid #b7b2b2;
-        width: 150px;
+        border: 1.5px solid #b7b2b2;
+        width: 110px;
         margin-bottom: 10px;
         padding: 5px;
         border-radius: 3px;
         align-items: center;
+        justify-content: center;
       }
       .adds {
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
-        font-size: 13px;
+        font-size: 10px;
         font-family: sans-serif;
       }
     </style>
@@ -121,7 +135,7 @@
       <div>
         <button class="btn-fship">Free shipping</button>
         <p class="head-p">Razer Kraken Kitty Edit Gaming<br />Headset Quartz</p>
-        <p>&#36; 700</p>
+        <p class="dormant">&#36;700</p>
         <p class="active-price">&#36; 599</p>
         <p class="duration">
           The offer is vital until April 3 or as long as stock lasts!
@@ -132,7 +146,7 @@
 
         <div class="green-50">
           <p class="empty-green">&nbsp;</p>
-          <p>50+ pcs. in stock</p>
+          <p class="stock">50+ pcs. in stock</p>
         </div>
 
         <div class="adds">
