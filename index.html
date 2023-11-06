@@ -19,44 +19,133 @@
         align-items: center;
         justify-content: center;
       }
+
       .container {
-        border: 1px solid #444;
+        border: none;
+        border-radius: 3px;
         width: auto;
-        height: 320px;
+        height: 390px;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.25);
 
         display: flex;
       }
+
       .headset-image {
         width: 160px;
         height: 130px;
+      }
+
+      .btn-fship {
+        color: #fff;
+        background-color: #000;
+        border-radius: 30px;
+        padding: 3px;
+        font-family: sans-serif;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+
+      .head-p {
+        font-family: sans-serif;
+        margin-bottom: 30px;
+        font-size: 21px;
+      }
+      .active-price {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: 10px;
+      }
+      .duration {
+        font-size: 14px;
+        color: #766464;
+      }
+
+      .btn-add {
+        width: 305px;
+        margin: 10px 0;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        background-color: blue;
+        color: #fff;
+      }
+
+      .empty-green {
+        border: 1px solid #444;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: rgb(107, 209, 107);
+        border: none;
+        margin-right: 8px;
+      }
+      .green-50 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+
+      .diagram {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+      }
+
+      .diagram-add {
+        display: flex;
+
+        border: 1px solid #b7b2b2;
+        width: 150px;
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 3px;
+        align-items: center;
+      }
+      .adds {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        font-size: 13px;
+        font-family: sans-serif;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div>
-        <img
-          src="Img.headset.jpg"
-          alt="an headset"
-          height="400px"
-          width="350px"
-          class="headset-image"
-        />
+        <img src="Img.headset.jpg" alt="an headset" class="headset-image" />
       </div>
       <div>
-        <button>Free shipping</button>
-        <p>Razer Kraken Kitty Edit Gaming<br />Headset Quartz</p>
+        <button class="btn-fship">Free shipping</button>
+        <p class="head-p">Razer Kraken Kitty Edit Gaming<br />Headset Quartz</p>
         <p>&#36; 700</p>
-        <p>&#36; 599</p>
-        <spam>The offer is vital until April 3 or as long as stock lasts!</spam>
-        <button>Add to cart</button>
-        <spam class="empty-green">&nbsp;</spam>
-        <p>50+ pcs. in stock</p>
-        <img src="img.scale.jpg" alt="a scale" height="50px" width="50px" />
-        <p>Add to cart</p>
+        <p class="active-price">&#36; 599</p>
+        <p class="duration">
+          The offer is vital until April 3 or as long as stock lasts!
+        </p>
+        <div>
+          <button class="btn-add">Add to cart</button>
+        </div>
 
-        <img src="img.love.jpg" alt="love" height="50px" width="50px" />
-        <p>Add to wishlist</p>
+        <div class="green-50">
+          <p class="empty-green">&nbsp;</p>
+          <p>50+ pcs. in stock</p>
+        </div>
+
+        <div class="adds">
+          <div class="diagram-add">
+            <img src="img.scale.jpg" alt="a scale" class="diagram" />
+            <p>Add to cart</p>
+          </div>
+
+          <div class="diagram-add">
+            <img src="img.love.jpg" alt="love" class="diagram" />
+            <p>Add to wishlist</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
