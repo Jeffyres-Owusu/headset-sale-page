@@ -5,29 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Head-Set Sales page</title>
 
-    <style></style>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        border: 1px solid #444;
+        width: auto;
+        height: 320px;
+
+        display: flex;
+      }
+      .headset-image {
+        width: 160px;
+        height: 130px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-      <img
-        src="Img.headset.jpg"
-        alt="an headset"
-        height="400px"
-        width="350px"
-      />
-      <button>Free shipping</button>
-      <p>Razer Kraken Kitty Edit Gaming<br />Headset Quartz</p>
-      <p>&#36; 700</p>
-      <p>&#36; 599</p>
-      <spam>The offer is vital until April 3 or as long as stock lasts!</spam>
-      <button>Add to cart</button>
-      <spam class="empty-green">&nbsp;</spam>
-      <p>50+ pcs. in stock</p>
-      <img src="img.scale.jpg" alt="a scale" height="50px" width="50px" />
-      <p>Add to cart</p>
+      <div>
+        <img
+          src="Img.headset.jpg"
+          alt="an headset"
+          height="400px"
+          width="350px"
+          class="headset-image"
+        />
+      </div>
+      <div>
+        <button>Free shipping</button>
+        <p>Razer Kraken Kitty Edit Gaming<br />Headset Quartz</p>
+        <p>&#36; 700</p>
+        <p>&#36; 599</p>
+        <spam>The offer is vital until April 3 or as long as stock lasts!</spam>
+        <button>Add to cart</button>
+        <spam class="empty-green">&nbsp;</spam>
+        <p>50+ pcs. in stock</p>
+        <img src="img.scale.jpg" alt="a scale" height="50px" width="50px" />
+        <p>Add to cart</p>
 
-      <img src="img.love.jpg" alt="love" height="50px" width="50px" />
-      <p>Add to wishlist</p>
+        <img src="img.love.jpg" alt="love" height="50px" width="50px" />
+        <p>Add to wishlist</p>
+      </div>
     </div>
   </body>
 </html>
